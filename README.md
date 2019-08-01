@@ -9,6 +9,6 @@ Then
 - Build the image
 - Use the image as you whish
 
-I've created this Dockerfile to have the Test Café tool run into this contained with Firefox and Chromium 
+I've created this Dockerfile to have the Test Café tool run into this container using Firefox and Chromium 
 in headless mode and execute automated UI tests.
 
