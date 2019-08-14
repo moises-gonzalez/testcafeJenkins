@@ -18,12 +18,12 @@ RUN apt-get update && apt-get install -y \
     firefox-esr \
     xvfb \
     chromium \
+    vim \
     && rm -rf /var/lib/apt/lists/*
 
 USER jenkins
 
-EXPOSE 22
+EXPOSE 8080
 
 ENV JAVA_OPTS="-Xmx8192m"
 ENV JENKINS_OPTS=" --handlerCountMax=300 --logfile=/var/log/jenkins/jenkins.log --webroot=/var/cache/jenkins/war"
-
